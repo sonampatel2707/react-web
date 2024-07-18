@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding:15px;
+    
+}
+.side-bar{
+ width:15%;
+ /* background-color: #fff;    */
+ border-radius: 15px;
+ height: 80vh;
+ position: sticky;
+ top:120px;
+
+}
+.post-section{
+    width:calc(100%-34%);
+}
+
+.right-bar{
+    width:17%;
+    max-height: 80vh;
+    overflow-y: scroll;
+    /* background-color: #fff; */
+    border-radius: 15px;
+    position: sticky;
+    top:120px;
+}
+.right-bar::-webkit-scrollbar{
+    display: none;
+}

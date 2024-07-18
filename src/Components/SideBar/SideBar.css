@@ -1,0 +1,15 @@
+.side-bar-content{
+    height:80vh;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.side-bar-content .items{
+    padding:15px;
+
+}
+.side-bar-content .items .icons{
+    margin-right: 20px;
+}
