@@ -15,7 +15,7 @@
 
 }
 .post-section{
-    width:500px; 
+    width: calc(100% - 32%);
 }
 
 .right-bar{
