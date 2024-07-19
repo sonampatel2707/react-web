@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    border-radius: 10px;
 
 }
 .side-bar-content .items{
@@ -12,4 +13,37 @@
 }
 .side-bar-content .items .icons{
     margin-right: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .side-bar-content {
+        height: auto; /* Allow the height to adjust based on content */
+        padding: 5px; /* Reduce padding */
+    }
+
+    .side-bar-content .items {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .side-bar-content .items .icons {
+        margin-right: 15px; /* Reduce margin for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 480px (small mobile devices) */
+@media (max-width: 480px) {
+    .side-bar-content {
+        height: auto; /* Allow the height to adjust based on content */
+        padding: 5px; /* Reduce padding further */
+        flex-direction: row; /* Switch to horizontal layout if needed */
+    }
+
+    .side-bar-content .items {
+        padding: 5px; /* Reduce padding */
+    }
+
+    .side-bar-content .items .icons {
+        margin-right: 10px; /* Further reduce margin */
+    }
 }

@@ -6,7 +6,7 @@
     
 }
 .side-bar{
- width:15%;
+ width:190px;
  /* background-color: #fff;    */
  border-radius: 15px;
  height: 80vh;
@@ -15,7 +15,9 @@
 
 }
 .post-section{
-    width: calc(100% - 32%);
+    width: 800px;
+    padding: 25px;
+    
 }
 
 .right-bar{
@@ -29,4 +31,33 @@
 }
 .right-bar::-webkit-scrollbar{
     display: none;
+}
+
+
+@media (max-width: 1200px) {
+    .post-section {
+        width: calc(100% - 190px); /* Adjust width when right bar is hidden */
+    }
+    .right-bar {
+        display: none; /* Hide right bar on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .post-section {
+        width: 100%; /* Full width for post section */
+        padding: 15px; /* Reduced padding */
+    }
+    .side-bar {
+        display: none; /* Hide sidebar on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px; /* Reduced padding for container */
+    }
+    .post-section {
+        padding: 10px; /* Further reduced padding */
+    }
 }

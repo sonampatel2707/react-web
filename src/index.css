@@ -11,3 +11,20 @@ body{
 body::-webkit-scrollbar{
   display: none;
 }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  /* Styles for medium to large screens */
+}
+
+@media (max-width: 992px) {
+  /* Styles for tablets */
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile phones in portrait mode */
+}
+
+@media (max-width: 576px) {
+  /* Styles for mobile phones in landscape mode */
+}

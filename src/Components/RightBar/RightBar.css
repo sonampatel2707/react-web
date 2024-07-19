@@ -1,5 +1,5 @@
 .right-container{
-    padding: 10px;
+    padding: 20px;
     color:white;
 }
 .post-img {
@@ -14,10 +14,10 @@
 }
 
 .right-container .post-img #_img{
-    width: 280px;
-    height:200px;
+    width: 190px;
+    height: 170px;
     border-radius: 10px;
-    border: 1px solid yellow;
+    border: 1px solid #fff;
 }
 
 
@@ -27,8 +27,8 @@
     align-items: center;
     gap:10px;
     position:absolute;
-    bottom: 20px;
-    left:35px;
+    bottom: 25px;
+    left:12px;
 }
 .right-container .inside-img .img{
     display: flex;
@@ -38,16 +38,77 @@
 
 }
 .right-container .inside-img .img img{
-    height: 70px;
-    width: 70px;
-    border-radius: 10px;
-    border:2px solid yellow;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 2px solid yellow;
+    font-size: 15px;
+    
+}
+.right-container .inside-img .text h3{
     font-size: 15px;
 }
-.text h3{
-    font-size: 22px;
-}
-.text p{
-    font-size: 19px;
+.right-container .inside-img .text p{
+    font-size: 12px;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .right-container {
+        padding: 15px;
+    }
+
+    .right-container .post-img #_img {
+        width: 150px;
+        height: 130px;
+    }
+
+    .right-container .inside-img {
+        bottom: 20px;
+        left: 8px;
+        gap: 8px;
+    }
+
+    .right-container .inside-img .img img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .right-container .inside-img .text h3 {
+        font-size: 14px;
+    }
+
+    .right-container .inside-img .text p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .right-container {
+        padding: 10px;
+    }
+
+    .right-container .post-img #_img {
+        width: 120px;
+        height: 100px;
+    }
+
+    .right-container .inside-img {
+        bottom: 15px;
+        left: 5px;
+        gap: 5px;
+    }
+
+    .right-container .inside-img .img img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .right-container .inside-img .text h3 {
+        font-size: 12px;
+    }
+
+    .right-container .inside-img .text p {
+        font-size: 8px;
+    }
+}
